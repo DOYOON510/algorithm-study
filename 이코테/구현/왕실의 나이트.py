@@ -11,4 +11,4 @@ for i in move_types:
         print(i)
     else: continue
 
-print(cnt)d
+print(cnt)
