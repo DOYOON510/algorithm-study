@@ -1,5 +1,5 @@
 
-for test_case in range(1, 3):
+for test_case in range(1, 11):
     n = int(input())
     lst = list(map(int, input().split()))
     rst = 0
