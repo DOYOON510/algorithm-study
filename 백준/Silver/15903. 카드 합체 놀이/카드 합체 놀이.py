@@ -1,11 +1,11 @@
+import heapq
 n, m = map(int, input().split())
 lst = list(map(int, input().split()))
+heapq.heapify(lst)
 
-while m>0:
-    lst.sort()
-    sum_num = sum(lst[:2])
-    for i in range(2):
-        lst[i] = sum_num
-    m -= 1
+for _ in range(m):
+    x = heapq.heappop(lst) + heapq.heappop(lst)
+    heapq.heappush(lst, x)
+    heapq.heappush(lst, x)
 
 print(sum(lst))
