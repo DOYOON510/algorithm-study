@@ -38,8 +38,5 @@ for i in range(n):
         if graph[i][j] == 1:
             ans.append(bfs(i, j))
 
-print(len(ans))
-
 ans.sort()
-for i in ans:
-    print(i)
+print(len(ans), *ans, sep='\n')
